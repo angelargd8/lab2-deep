@@ -1,26 +1,28 @@
-* ¿Por qué creen que es el mal rendimiento de este modelo?
-El mal rendimiento del modelo es porque es un modelo basico con solo una capa.  Además, la 
-al iniciar de forma aleatoria y el uso limitado de épocas de entrenamiento hacen que el modelo 
-no alcance un buen desempeño. Pero hacer esto haria que nuestras compus se tardaran un siglo en procesar.
+-- Parte 1 -- 
+* ¿Por qué creen que es el mal rendimiento de este modelo? 
+El mal rendimiento del modelo es porque es un modelo básico con solo una capa.  Además, la  
+al iniciar de forma aleatoria y el uso limitado de épocas de entrenamiento hacen que el modelo  
+no alcance un buen desempeño. Pero hacer esto haría que nuestras compus se tardaran un siglo en procesar. 
 
-* ¿Qué pueden hacer para mejorarlo?
-Se podria aumentar la red con mas capas convolucionales. Tambien se podrian usar otras tecnicas
-para evitar sobreajuste y un batch normalization para mejorar la estabilidad del entrenamiento.
-Tambien, se podrian usar mas epocas e ir ajustando el learning del modelo.
+* ¿Qué pueden hacer para mejorarlo? 
+Se podría aumentar la red con más capas convolucionales. También, se podrían usar otras técnicas 
+para evitar sobreajuste y un batch normalization para mejorar la estabilidad del entrenamiento. 
+También, se puede usar más épocas e ir ajustando el learning del modelo.  
 
-* ¿Cuáles son las razones para que el modelo sea tan lento?
-Es lento porque los calculos se hacen en numpy y con operaciones manuales. A pesar de que
-numpy es lo suficientemente eficiente se queda corto para este tipo de problemas. Esto hace
-que las convoluciones. Se podria intentar usar GPU para realizar estos calculos.
+* ¿Cuáles son las razones para que el modelo sea tan lento? 
+Es lento porque los cálculos se hacen en numpy y con operaciones manuales. A pesar de que 
+numpy es lo suficientemente eficiente, se queda corto para este tipo de problemas. Esto hace 
+que las convoluciones. Se podría intentar usar GPU para realizar estos cálculos.  
 
-* ¿Qué haría para mejorar el rendimiento del modelo?
-Se podria ajustar la arquitectura de la red, ahorita se estan trabajando con tres capas pero
-se podria ir jugando con esto para cambiar los parametros e ir viendo si mas capas funcionan o
-aumentar la catidad de filtro. De igual forma que en el anterior se podria ajustar los hiperparámetros
-para buscar una mejor solucion y mas epocas.
+-- Parte 2 -- 
+* ¿Qué haría para mejorar el rendimiento del modelo? 
+Se podría ajustar la arquitectura de la red, ahorita se están trabajando con tres capas pero 
+se podría ir jugando con esto para cambiar los parámetros e ir viendo si más capas funcionan o 
+aumentar la cantidad de filtro. De igual forma que en el anterior se podría ajustar los hiperparámetros 
+para buscar una mejor solución y más épocas.  
 
-* ¿Qué haría para disminuir las posibilidades de overfitting?
-Se podrian aplicar transformacion, recordes o cambios de color a las imagenes, esto podria hacer que el modelo
-vea más variada la informacion y no se aprenda patrones concurrentes. Se podrian utilizar algunas otras tecnicas
-que se puedan utilizar en las capas conectasdas que le ayuden a la generalizacion como reducir la capacidad del modelo
-esto podria hacer que generalice aun mas.
+* ¿Qué haría para disminuir las posibilidades de overfitting? 
+Se puede aplicar transformacion, recordes o cambios de color a las imágenes, esto haría que el modelo 
+vea más variada la información y no se aprenda patrones concurrentes. Se podrían utilizar algunas otras técnicas 
+que se puedan utilizar en las capas conectadas que le ayuden a la generalización como reducir la capacidad del modelo 
+esto lograría hacer que generalice aún más. 
